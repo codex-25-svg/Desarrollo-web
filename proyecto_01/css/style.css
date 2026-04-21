@@ -1,0 +1,323 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    scroll-margin-top: 110px;
+}
+
+body {
+    background-color: rgb(183, 183, 191);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: rgb(183, 183, 191);
+    color: #fff;
+    padding: 10px;
+    border: 1px solid rgb(169, 164, 164);
+}
+
+header h1 {
+    font-size: 32px;
+    color: #2d2c3b;
+}
+
+nav {
+    margin: 8px 0 8px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+}
+
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0);
+    /* text-shadow: 2px 2px 4px rgb(0, 0, 0); */
+    font-size: 18px;
+}
+
+
+/* main */
+main {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    margin-top: 10px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-decoration: underline;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.sobre-mi {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sobre-mi figure {
+    margin-bottom: 10px;
+}
+
+.sobre-mi img {
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-mi figcaption {
+    color: #2d2c3b;
+    font-weight: 700;
+}
+
+.sobre-mi p {
+    line-height: 1.6;
+    text-align: justify;
+    color: #444;
+    margin: 10px;
+}
+
+.sobre-mi strong {
+    color: #2c3e50;
+}
+
+.habilidades {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades table {
+    margin: 20px 0;
+}
+
+.habilidades table,
+.hobbies ul {
+    width: 100%;
+    max-width: 600px;
+}
+
+.habilidades table,
+th,
+td {
+    /* width: 540px; */
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+
+th {
+    background: #4c62cd;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+.habilidades ul {
+    /* width: 400px; */
+    list-style: none;
+}
+
+.habilidades li {
+    background: #b5b2df;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    color: #2c3e50;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+
+.proyectos {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.proyectos ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    padding-left: 0;
+}
+
+
+.proyectos li {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #b5b2df;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.proyectos strong {
+    color: #2c3e50;
+}
+
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.hobbies h2 {
+    text-align: center;
+}
+
+.hobbies ul {
+    /* width: 500px; */
+    list-style: none;
+    padding: 0;
+}
+
+/* Cada hobby como tarjeta */
+.hobbies li {
+    background: #d1a0a0;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+
+/* footer */
+.contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.contacto form{
+    /* width: 500px; */
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+
+}
+.contacto input{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+.contacto textarea{
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+.contacto button{
+    width: 115px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background: #4c62cd;
+    color: white;
+}
+
+/* Título */
+.contacto h2 {
+    margin-bottom: 15px;
+}
+
+/* Links */
+.contacto a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover en links */
+.contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Espaciado */
+.contacto p {
+    margin: 10px 0;
+}
+
+/* address */
+.contacto address {
+    font-style: normal;
+    /* quita cursiva por defecto */
+}
+
+/* Texto pequeño */
+.contacto small {
+    display: block;
+    margin-top: 15px;
+    opacity: 0.8;
+}
+

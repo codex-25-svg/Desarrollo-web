@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Personal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- cabecera o header -->
+    <header>
+        <h1>Nelson Garay Curi</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main o cuerpo de la pagina -->
+    <main>
+        <!-- secciones -->
+        <section id="sobre-mi" class="sobre-mi">
+            <h2>Sobre mi</h2>
+
+            <figure>
+                <img src="https://picsum.photos/150" alt="Foto de Nelson" loading="lazy">
+                <figcaption>Nelson Garay Curi</figcaption>
+            </figure>
+
+            <p>
+                Soy estudiante de Ingeniería de Sistemas con interés en el desarrollo web
+                y la seguridad informática. Actualmente me encuentro aprendiendo y practicando
+                tecnologías como HTML, CSS y JavaScript, enfocándome en construir interfaces
+                web funcionales, claras y bien estructuradas.
+            </p>
+
+            <p>
+                Me gusta resolver problemas mediante la programación y mejorar constantemente
+                mis habilidades a través de la práctica y la creación de pequeños proyectos.
+                Tengo interés en seguir profundizando en el desarrollo frontend y, a futuro,
+                integrar conocimientos de backend y ciberseguridad.
+            </p>
+            <p>
+                <strong>Dato curioso:</strong> disfruto escuchar música andina mientras estudio o programo,
+                ya que me ayuda a concentrarme.
+            </p>
+        </section>
+
+        <section id="habilidades" class="habilidades">
+            <h2>Habilidades tecnicas</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Habilidad</th>
+                        <th>Nivel</th>
+                        <th>Anos de experiencia</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Basico</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Basico</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Basico</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Habilidades blandas</h2>
+            <ul>
+                <li>Comunicacion interperonsl</li>
+                <li>Trabajo en equipo</li>
+                <li>Pensamiento critico</li>
+                <li>Adaptabilidad</li>
+                <li>Gestion del tiempo</li>
+            </ul>
+        </section>
+
+        <!-- habilidades -->
+        <section id="proyectos" class="proyectos">
+            <h2>Mis proyectos</h2>
+
+            <ol>
+                <li>
+                    <strong>Formulario de contacto</strong> —
+                    Pagina web con HTML que permite a los usuarios enviar
+                    su nombre, email y mensaje.
+                </li>
+                <li>
+                    <strong>Pagina de cursos</strong> —
+                    Sitio con tabla de cursos, lista de requisitos e imagen,
+                    usando HTML sematico.
+                </li>
+                 <li>
+                    <strong>Formulario de contacto</strong> —
+                    Pagina web con HTML que permite a los usuarios enviar
+                    su nombre, email y mensaje.
+                </li>
+                <li>
+                    <strong>Pagina de cursos</strong> —
+                    Sitio con tabla de cursos, lista de requisitos e imagen,
+                    usando HTML sematico.
+                </li>
+            </ol>
+        </section>
+
+        <!-- hobbies -->
+        <section id="hobbies" class="hobbies">
+            <h2>Mis hobbies e intereses</h2>
+
+            <ul>
+                <li>Programar y crear pequenos proyectos web</li>
+                <li>Aprender nuevas tecnologias y lenguajes de programacion</li>
+                <li>Ressolver problemas dfe logica y algoritmos</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- footer o pie de pagina -->
+    <footer id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form action="/contacto" method="post">
+            <!-- formulario de contacto -->
+            <input type="text" required placeholder="Enter your name">
+
+            <input type="email" name="email" id="email" required placeholder="Enter a valid email">
+
+            <input type="text" name="phone" id="phone" placeholder="Enter your phone" required>
+
+            <textarea name="mss" id="mss" placeholder="Enter your message"></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+        <p>
+        <address>
+            📧 <a href="mailto:nels23744@gmail.com">nels23744@gmail.com</a>
+        </address>
+        </p>
+        <p>
+            🔗 <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener">
+                LinkedIn
+            </a>
+        </p>
+
+
+
+        <p><small>© 2025 Nelson Garay Curi</small></p>
+    </footer>
+
+</body>
+
+</html>
