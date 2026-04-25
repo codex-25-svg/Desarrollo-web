@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: rgb(29, 29, 26);
+    width: 220px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.container .pantalla{
+    width: 200px;
+    height: 65px;
+    padding: 8px;
+    border: none;
+}
+.btns{
+    max-width: 205px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1px;
+    /* background-color: aqua; */
+}
+
+.btns .delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns button{
+    width: 50px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 30%;
+    font-size: 18px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns .number{
+    background: #080136;
+    color: #fff;
+}
+.btns .singo{
+    background: #1c07a4;
+    color: #fff;
+}
+.btns .igual{
+    color: #dc078e;
+    background: #e1aac1;
+}
+
